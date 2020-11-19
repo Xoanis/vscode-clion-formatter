@@ -1,65 +1,32 @@
-# clion-formatter README
+# CLion format README
 
-This is the README for your extension "clion-formatter". After writing up a brief description, we recommend including the following sections.
+The extension allows formatting c++ files using CLion's command-line interface.
+https://www.jetbrains.com/help/clion/command-line-formatter.html
+
+## Q&A
+
+Q: What was this extension developed for?
+
+A: If you have a CLion's formatting settings file, and you need to ensure that the code formatting in visual studio code is identical to how it is done in Clion you can use this tool. CLion IDE has the feature to export clion-codestyle.xml file to .clang-format file, however, this does not provide 100% identical formatting.
+
+## Usage
+
+1. Install an extension from the marketplace;
+2. Set the extension settings;
+3. Open the C ++ file in the editor, select "Format Document With ..." in the context menu, or select a code fragment and select "Format Selection With ..." in the context menu, then select "CLion format";
+4. Standard shortcuts can be used for formatting.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Made in accordance with the official guidelines: https://code.visualstudio.com/blogs/2016/11/15/formatters-best-practices;
+- Allows you to edit the selected text or the whole file;
+- You will have time to make yourself a coffee because it works slightly slowly :)
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `clion-formatter.executable`: clion executable path
+* `clion-formatter.settings`: code style settings file path to use for formatting
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
